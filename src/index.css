@@ -3,32 +3,67 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Great+Vibes&family=Inconsolata:wght@400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-  background-color: #141518;
+  background-color: #1e1f25;
   color: #fff;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 * {
   margin: 0;
   padding: 0;
 }
+.first-grad {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  width: 1600px;
+  height: 2353px;
+  border-radius: 2353px;
+  background: radial-gradient(
+    40.45% 40.45% at 50% 46.16%,
+    rgba(37, 43, 74, 0.8),
+    rgba(14, 17, 32, 0) 100%
+  );
+  filter: blur(12px);
+  z-index: -3;
+}
+.first-vector {
+  position: absolute;
+  top: 0;
+  width: fit-content;
+  z-index: -5;
+  opacity: 0.4;
+}
+
+
 .grad-btn {
   border-radius: 100px;
-  background: linear-gradient(
-    266deg,
-    #246cf9 -0.27%,
-    #1e68f6 -0.26%,
-    #0047d0 98.59%
-  );
+  background-image: linear-gradient(266deg, #246cf9, #1e68f6, #003db6);
+  background-size: 200% 100%;
+  transition: all 0.3s ease-in-out;
+}
+.grad-btn:hover {
+  background-position: 100% 0;
+  transition: all 0.3s ease-in-out;
 }
 .outline-btn {
   border-radius: 100px;
   border: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+.outline-btn:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  background-color: #b7b7b7;
+  color: #000;
 }
 .lg-btn {
   padding: 18px 32px;
@@ -43,3 +78,14 @@ body {
   line-height: 22.4px;
   color: #fff;
 }
+.coin-card {
+  height: 185px;
+  background-color: rgba(47, 50, 65, 0.5);
+  margin: 0 10px;
+  border-radius: 8px;
+}
+/* @media only screen and (min-width: 512px) {
+  .coin-card {
+    height: 180px;
+  }
+} */
