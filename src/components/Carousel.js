@@ -86,7 +86,7 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    handleData()
+    // handleData()
   }, []);
 
   const handleDragStart = (e) => e.preventDefault();
@@ -129,17 +129,11 @@ const Carousel = () => {
     0: {
       items: 1,
     },
-    512: {
-      items: 2,
-    },
-    768: {
+    1000: {
       items: 3,
     },
-    1000: {
-      items: 4,
-    },
     1500: {
-      items: 5,
+      items: 4,
     },
   };
   return (
@@ -160,6 +154,7 @@ const Carousel = () => {
             // paddingRight={20}
           />
         )}
+        <button onClick={handleData} className="outline-btn w-full">Click me</button>
       </div>
     </>
   );
