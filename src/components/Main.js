@@ -1,30 +1,22 @@
 import React from "react";
-import mainBg from "../assets/main_illustration.png";
+import Hero from "./Hero";
 import Carousel from "./Carousel";
+import Features from "./Features.js";
+
+import FirstVector from "../assets/illustration/VectorLineA.png";
 
 const Main = () => {
-  
   return (
     <>
-    <section className="pt-20">
-      <div className="mx-auto mt-8 max-w-7xl px-3 flex justify-center items-center flex-col lg:flex-row">
-        <div className="text-center lg:text-left px-6 lg:pl-8 ">
-          <h1 className="text-4xl lg:text-5xl font-bold">A trusted and secure cryptocurrency exchange.</h1>
-          <p className="text-base mt-2 md:mt-6" style={{lineHeight: '24px'}}>
-            Your guide to the world of an open financial system. Get started
-            with the easiest and most secure platform to buy and trade
-            cryptocurrency.
-          </p>
-          <button className="grad-btn md-btn w-full lg:w-72 mt-5 md:mt-10">Get Started Now</button>
-        </div>
-        <div className="w-full">
-            <img src={mainBg} alt="Main-background" />
-        </div>
+      <div className="overflow-hidden relative">
+        <Hero />
+        <Carousel />
+        <Features />
+        <div style={{ height: "200vh" }}></div>
+
+        <div className="first-grad"></div>
+        <img className="first-vector" src={FirstVector} alt="" />
       </div>
-    </section>
-    <section className="mt-12">
-      <Carousel/>
-    </section>
     </>
   );
 };

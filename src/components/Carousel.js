@@ -96,7 +96,7 @@ const Carousel = () => {
       key={index}
       onDragStart={handleDragStart}
       role="presentation"
-      className="flex flex-col justify-between items-center p-4 coin-card "
+      className="flex flex-col justify-between items-center p-4 coin-card"
     >
       <div className="w-full flex justify-between items-center">
         <img width={44} src={ele.image} alt="" />
@@ -137,7 +137,7 @@ const Carousel = () => {
     },
   };
   return (
-    <>
+    <section>
       <div style={{ height: "50%", display: "flex", alignItems: "center" }}>
         {!trendingData ? null : (
           <AliceCarousel
@@ -154,9 +154,11 @@ const Carousel = () => {
             // paddingRight={20}
           />
         )}
-        <button onClick={handleData} className="outline-btn w-full">Click me</button>
+        <button onClick={handleData} className="outline-btn w-full">
+          Click me
+        </button>
       </div>
-    </>
+    </section>
   );
 };
 

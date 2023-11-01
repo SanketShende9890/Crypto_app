@@ -23,16 +23,16 @@ const Header = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (navbarOpen) {
-      document.body.style.overflowY = "hidden";
-    } else {
-      document.body.style.overflowY = "auto";
-    }
-    return () => {
-      document.body.style.overflowY = "auto";
-    };
-  }, [navbarOpen]);
+  // useEffect(() => {
+  //   if (navbarOpen) {
+  //     document.body.style.overflowY = "hidden";
+  //   } else {
+  //     document.body.style.overflowY = "auto";
+  //   }
+  //   return () => {
+  //     document.body.style.overflowY = "auto";
+  //   };
+  // }, [navbarOpen]);
 
   const navbarStyle = {
     zIndex: '99',
