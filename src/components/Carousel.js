@@ -140,7 +140,7 @@ const Carousel = () => {
     },
   };
   return (
-    <section className="mt-10 lg:mt-20">
+    <section className="mt-10">
       <div style={{ height: "50%", display: "flex", alignItems: "center" }}>
         {!trendingData ? null : (
           <AliceCarousel

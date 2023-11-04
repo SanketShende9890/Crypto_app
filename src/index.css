@@ -49,6 +49,33 @@ body {
   right: 0;
   width: fit-content;
   z-index: -5;
+  opacity: 0.4;
+}
+.third-vector{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: fit-content;
+  z-index: -5;
+  opacity: 0.4;
+}
+.fourth-vector{
+  position: absolute;
+  right: 0;
+  width: fit-content;
+  z-index: -5;
+  opacity: 0.4;
+  top: 70px;
+}
+.fifth-vector{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: fit-content;
+  z-index: -5;
+  opacity: 0.4;
+  right: 0;
 }
 .grad-btn {
   border-radius: 100px;
@@ -68,8 +95,8 @@ body {
 .outline-btn:hover {
   transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
-  background-color: #b7b7b7;
-  color: #000;
+  background-color: #1e68f6;
+  color: #fff;
 }
 .lg-btn {
   padding: 18px 32px;
@@ -84,6 +111,27 @@ body {
   line-height: 22.4px;
   color: #fff;
 }
+.custom-search-box{
+  border-radius: 100px;
+border: 1px solid #34384C;
+background: rgba(47, 50, 65, 0.50);
+padding: 5px;
+margin-top: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.custom-search-box input{
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  color: #fff;
+  background-color: transparent;
+}
+.custom-search-box input:focus-visible{
+  outline: none;
+}
+
+
 
 /* Hero */
 .coin-card {
