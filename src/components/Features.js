@@ -6,7 +6,7 @@ import secondVector from "../assets/illustration/VectorLineB.png";
 
 const Features = () => {
   return (
-    <section className="mt-32">
+    <section className="mt-20">
       <div className="overflow-hidden relative mx-auto mt-8 max-w-7xl px-3 flex justify-center items-center flex-col lg:flex-row-reverse">
         <div className="w-full lg:w-auto text-center lg:text-left px-6 lg:pl-8 ">
           <h1 className="text-3xl lg:text-4xl font-bold">
@@ -20,16 +20,16 @@ const Features = () => {
             Let’s Trade Now
           </button>
         </div>
-        <div className="w-full mt-10 lg:w-auto flex flex-col md:flex-row justify-center items-center px-6 lg:pl-8">
+        <div className="w-full mt-14 lg:w-auto flex flex-col md:flex-row justify-center items-center px-6 lg:pl-8">
           <div>
             <div className="feature-card mb-4 flex flex-col justify-center items-center p-6">
               <div className="w-24">
                 <img src={featureIconA} alt="featureIconA" />
               </div>
-              <h3 className="text-md font-bold text-center my-4">
+              <h3 className="text-xl font-bold text-center my-4">
                 Portfolio Manager
               </h3>
-              <p className="text-center leading-9">
+              <p className="text-center leading-6">
                 Buy and sell popular digital currencies, keep track of them in
                 the one place.
               </p>
@@ -38,10 +38,10 @@ const Features = () => {
               <div className="w-24">
                 <img src={featureIconB} alt="featureIconB" />
               </div>
-              <h3 className="text-md font-bold text-center my-4">
+              <h3 className="text-xl font-bold text-center my-4">
                 Mobile Apps
               </h3>
-              <p className="text-center leading-9">
+              <p className="text-center leading-6">
                 Stay on top of the markets with the Cryptolly app for Android or
                 iOS.
               </p>
@@ -53,10 +53,10 @@ const Features = () => {
               <div className="w-24">
                 <img src={featureIconC} alt="featureIconC" />
               </div>
-              <h3 className="text-md font-bold text-center my-4">
+              <h3 className="text-xl font-bold text-center my-4">
                 Vault protection
               </h3>
-              <p className="text-center leading-9">
+              <p className="text-center leading-6">
                 For added security, store your funds in a vault with time
                 delayed withdrawals.
               </p>

@@ -129,6 +129,9 @@ const Carousel = () => {
     0: {
       items: 1,
     },
+    576:{
+      items: 2,
+    },
     1000: {
       items: 3,
     },
@@ -137,7 +140,7 @@ const Carousel = () => {
     },
   };
   return (
-    <section>
+    <section className="mt-10 lg:mt-20">
       <div style={{ height: "50%", display: "flex", alignItems: "center" }}>
         {!trendingData ? null : (
           <AliceCarousel

@@ -92,6 +92,9 @@ body {
   margin: 0 10px;
   border-radius: 8px;
 }
+.card-bg{
+  background-color: rgba(47, 50, 65, 0.5);
+}
 .custom-line-height{
   line-height: 3.25rem !important;
 }

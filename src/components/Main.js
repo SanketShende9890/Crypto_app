@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import Carousel from "./Carousel";
 import Features from "./Features.js";
+import Exchange from "./Exchange.js";
+
 
 import FirstVector from "../assets/illustration/VectorLineA.png";
 
@@ -12,6 +14,7 @@ const Main = () => {
         <Hero />
         <Carousel />
         <Features />
+        <Exchange />
         <div style={{ height: "200vh" }}></div>
 
         <div className="first-grad"></div>
