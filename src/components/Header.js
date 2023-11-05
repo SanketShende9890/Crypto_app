@@ -23,6 +23,7 @@ const Header = () => {
     };
   }, []);
 
+  
   const navbarStyle = {
     zIndex: '99',
     backgroundColor: scrolling ? "rgb(47, 50, 65)" : "transparent",
