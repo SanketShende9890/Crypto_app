@@ -5,8 +5,8 @@ import exchangeIconB from "../assets/exchange_icon_2.png";
 import exchangeIconC from "../assets/exchange_icon_3.png";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import usdIcon from "../assets/USD.png";
-import btnIcon from "../assets/Bitcoin.png";
+import usdIcon from "../assets/usd.png";
+import btnIcon from "../assets/bitcoin.png";
 
 import masterCardIcon from "../assets/brand/masterCard_icon.png";
 import visaCardIcon from "../assets/brand/visa_icon.png";

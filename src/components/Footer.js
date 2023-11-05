@@ -121,7 +121,7 @@ const Footer = () => {
                     Buy/Sell
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
                     href="https://tailwindcss.com/"
                     className="hover:underline"
@@ -129,7 +129,7 @@ const Footer = () => {
                     Trade Now
                   </a>
                 </li>
-                <li>
+                <li className="mb-4">
                   <a
                     href="https://tailwindcss.com/"
                     className="hover:underline"
