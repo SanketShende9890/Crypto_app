@@ -6,7 +6,7 @@ import secondVector from "../assets/illustration/VectorLineB.png";
 
 const Features = () => {
   return (
-    <section className="overflow-hidden relative mt-20 lg:mt-10">
+    <section className="overflow-hidden relative mt-20 lg:mt-0">
       <div className="overflow-hidden relative mx-auto mt-8 max-w-7xl px-3 flex justify-center items-center flex-col lg:flex-row-reverse">
         <div className="w-full lg:w-auto text-center lg:text-left px-6 lg:pl-8 ">
           <h1 className="text-3xl lg:text-4xl font-bold">

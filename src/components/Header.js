@@ -23,7 +23,7 @@ const Header = () => {
     };
   }, []);
 
-  
+
   const navbarStyle = {
     zIndex: '99',
     backgroundColor: scrolling ? "rgb(47, 50, 65)" : "transparent",
@@ -33,22 +33,22 @@ const Header = () => {
 
   const MenuList = () => {
     const linkClass =
-      "w-full flex justify-center items-center p-2.5 text-2xl lg:text-base mb-5 lg:mb-0 uppercase lg:hover:bg-transparent lg:hover:underline hover:bg-blue-900 transition-all";
+      "w-full flex justify-center items-center p-2.5 text-2xl lg:text-base mb-5 lg:mb-0 uppercase lg:hover:bg-transparent lg:hover:underline hover:bg-slate-800 transition-all";
     return (
       <>
-        <Link className={linkClass} to="/exchange">
-          Exchange
+        <Link onClick={() => setNavbarOpen(false)} className={linkClass} to="/market">
+          Market
         </Link>
-        <Link className={linkClass} to="/pricing">
+        <Link onClick={() => setNavbarOpen(false)} className={linkClass} to="/pricing">
           Pricing
         </Link>
-        <Link className={linkClass} to="/wallet">
+        <Link onClick={() => setNavbarOpen(false)} className={linkClass} to="/wallet">
           Wallet
         </Link>
-        <Link className={linkClass} to="/company">
+        <Link onClick={() => setNavbarOpen(false)} className={linkClass} to="/company">
           Company
         </Link>
-        <Link className={linkClass} to="/blog">
+        <Link onClick={() => setNavbarOpen(false)} className={linkClass} to="/blog">
           Blog
         </Link>
       </>
@@ -58,8 +58,8 @@ const Header = () => {
   return (
     <header style={navbarStyle} className="fixed w-full">
       <nav className="w-full h-16 flex justify-between items-center mx-auto max-w-7xl px-4">
-        <div onClick={() => setNavbarOpen(!navbarOpen)} className="h-12">
-          <Link to="/">
+        <div className="h-12">
+          <Link onClick={() => setNavbarOpen(false)} to="/">
             <img
               className="cursor-pointer h-full"
               src={logoLarge}
@@ -70,8 +70,12 @@ const Header = () => {
         <div className="cta-button hidden lg:flex justify-center items-center gap-4">
           <MenuList />
           <div className="flex justify-center items-center gap-4 w-full">
-            <button className="outline-btn md-btn w-28">Sign In</button>
+            <Link onClick={() => setNavbarOpen(false)} to="/login">
+            <button className="outline-btn md-btn w-28">Login</button>
+            </Link>
+            <Link onClick={() => setNavbarOpen(false)}>
             <button className="grad-btn md-btn w-36">Get Started</button>
+            </Link>
           </div>
         </div>
         <div className="lg:hidden" onClick={() => setNavbarOpen(!navbarOpen)}>
@@ -87,16 +91,20 @@ const Header = () => {
           transform: navbarOpen ? "translateX(0)" : "translateX(-100%)",
           right: 0,
         }}
-        className={`lg:hidden mt-16 absolute top-0 right-0 min-h-screen w-full bg-blue-950 transition ease-in-out delay-150`}
+        className={`lg:hidden mt-16 absolute top-0 right-0 min-h-screen w-full bg-slate-900 transition ease-in-out delay-150`}
       >
         <nav className="flex flex-col justify-center items-center pt-7 px-10">
           <MenuList />
-          <button className="outline-btn md-btn mb-6 w-full sm:w-1/2">
-            Sign In
+          <Link onClick={() => setNavbarOpen(false)} to='/login'>
+          <button className="outline-btn md-btn mb-6 w-40">
+            Login
           </button>
-          <button className="grad-btn md-btn w-full sm:w-1/2">
+          </Link>
+          <Link onClick={() => setNavbarOpen(false)} >
+          <button className="grad-btn md-btn w-40">
             Get Started
           </button>
+          </Link>
         </nav>
       </div>
     </header>

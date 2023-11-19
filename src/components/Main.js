@@ -27,6 +27,8 @@ const Main = () => {
         </section>
         <CTA />
         <div className="first-grad"></div>
+        <div className="second-grad"></div>
+        <div className="third-grad"></div>
         <img className="first-vector" src={FirstVector} alt="" />
       </section>
     </>
